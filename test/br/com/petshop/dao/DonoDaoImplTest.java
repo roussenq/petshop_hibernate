@@ -30,7 +30,7 @@ public class DonoDaoImplTest {
     
     
     
-    @Test
+    //@Test
     public void testSalvarDono() {
         
         dono = new Dono(
@@ -47,6 +47,14 @@ public class DonoDaoImplTest {
         assertNotNull(dono.getId());
     }
 
+     //@Test
+    public void testAlterarDono() {
+        System.out.println("Alterar Dono");
+        
+        buscarDonoBd();
+        dono.setTelefone("(48)3248-1415");
+        
+    }    
     //@Test
     public void testPesquisarDonoPorNome() {
         System.out.println("pesquisar Dono por nome");
